@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap');
+:root {
+  --white: hsl(0, 0%, 100%);
+  --lightgray: hsl(212, 45%, 89%);
+  --grayishblue: hsl(220, 15%, 55%);
+  --darkblue: hsl(218, 44%, 22%);
+  --fontfamilyDefault: 'Outfit', sans-serif;
+  --fontWeightSmall: 400;
+  --fontWeightBig: 700;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.page {
+  max-width: 1440px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: var(--lightgray);
+}
+.QRCodeContainer {
+  max-width: 260px;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: var(--white);
+}
+.QRCodeContainer h1,
+.QRCodeContainer p {
+  font-family: var(--fontfamilyDefault);
+  padding: 0 10px;
+}
+
+.QRCodeContainer h1 {
+  font-size: 1.2rem;
+  font-weight: var(--fontWeightBig);
+  color: var(--darkblue);
+  margin-top: 20px;
+}
+.QRCodeContainer p {
+  font-size: 0.85rem;
+  font-weight: var(--fontWeightSmall);
+  color: var(--grayishblue);
+  margin: 15px 0 20px 0;
+}
+.QRCodeContainer img {
+  width: 100%;
+  border-radius: 10px;
+}
+.attribution { font-size: 11px; text-align: center;margin-top: 20px; }
+.attribution a { color: var(--grayishblue);}
